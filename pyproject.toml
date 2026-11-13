@@ -1,0 +1,10 @@
+[project]
+name = "ai-writing-tool"
+version = "0.1.0"
+description = "個人用 AI ライティングツール (Streamlit + Gemini)"
+requires-python = ">=3.13"
+dependencies = [
+    "google-genai>=2.34.0",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.1",
+]

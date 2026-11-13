@@ -1,0 +1,8 @@
+# このプロジェクト専用の Streamlit 設定（グローバル設定は変更しない）
+[server]
+# 初回起動時のメールアドレス入力を出さない
+headless = true
+port = 8501
+
+[browser]
+gatherUsageStats = false
