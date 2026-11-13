@@ -11,3 +11,6 @@ wheels/
 
 # APIキー（絶対に共有しない）
 .env
+
+# Streamlit のローカル用シークレット
+.streamlit/secrets.toml
