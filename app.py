@@ -257,7 +257,7 @@ with col_in:
             "追加の指示（任意）", placeholder="例：300字以内で / 箇条書きを使わないで",
             key=f"{tool_key}__extra",
         )
-        compare = st.toggle("🅰️🅱️ 3パターン作って比較する", key=f"{tool_key}__compare")
+        compare = st.toggle("🔀 3パターン（丁寧・バランス・簡潔）を作って比較する", key=f"{tool_key}__compare")
         submitted = st.form_submit_button("✨ 作成する", type="primary", use_container_width=True)
 
 with col_out:
