@@ -21,6 +21,9 @@ uv run python -c "from tools import TOOLS, build_prompt; [build_prompt(k, {f['ke
 ```
 
 `.streamlit/config.toml` で `headless = true` にしている。これが無いと初回起動時に Streamlit がメールアドレス入力で止まる（バックグラウンド起動も止まる）。
+同ファイルの `address = "localhost"` で自分の PC からのみ接続可にしている（LAN・外部から `.env` の API キーを使われないため）。外さないこと。
+
+必ず `uv run` を付けて起動する。`streamlit run app.py` だけだと Anaconda などグローバルの Python で動き、`google-genai` が無く ImportError になる。
 
 ## 構成
 

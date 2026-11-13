@@ -3,6 +3,8 @@
 # 初回起動時のメールアドレス入力を出さない
 headless = true
 port = 8501
+# 自分の PC からだけ開けるようにする（同じ Wi-Fi やインターネットから API キーを使われないため）
+address = "localhost"
 
 [browser]
 gatherUsageStats = false
